@@ -2,17 +2,16 @@ Summary:	Volume Compression (normalizer) for XMMS
 Summary(pl):	Kompresja g³o¶no¶ci (normalizacja) dla XMMS
 Name:		xmms-effect-compress
 Version:	1.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://trikuare.cx/~magenta/projects/xmms-compress-%{version}.tar.gz
 # Source0-md5:	4c2fb5fbad5207c48b948a0eb769e44b
 URL:		http://trikuare.cx/~magenta/projects/xmms-compress.html
+BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
 Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_xmms_plugin_dir	%(xmms-config --effect-plugin-dir)
 
 %description
 xmms-compress is a simple dynamic range compressor for XMMS.
@@ -37,8 +36,7 @@ kompresora z bardzo d³ugim narastaniem i opadaniem.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -D libcompress.so \
-	$RPM_BUILD_ROOT%{_xmms_plugin_dir}/libcompress.so
+install -D libcompress.so $RPM_BUILD_ROOT%{xmms_effect_plugindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README TODO ChangeLog
-%attr(755,root,root) %{_xmms_plugin_dir}/*.so
+%attr(755,root,root) %{xmms_effect_plugindir}/*.so
