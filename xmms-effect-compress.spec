@@ -1,7 +1,7 @@
 Summary:	Volume Compression (normalizer) for XMMS
 Summary(pl):	Kompresja g³o¶no¶ci (normalizacja) dla XMMS
 Name:		xmms-effect-compress
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
