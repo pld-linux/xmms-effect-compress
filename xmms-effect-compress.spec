@@ -15,14 +15,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_mandir		%{_prefix}/man
 
 %description
-
 xmms-compress is a simple dynamic range compressor for XMMS.
 Technically it's not really a compressor, but a volume normalizer, but
 the end result is the same as having a compressor with a very long
 attack and decay.
 
 %description -l pl
-
 xmms-compress jest prostym, dynamicznym kompresorem g³o¶no¶ci dla XMMS.
 Formalnie nie jest prawdziwym kompresorem g³o¶no¶ci, a raczej
 normalizatorem g³o¶no¶ci, ale efekt koñcowy jest taki sam, jak dla
@@ -45,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README TODO COPYING ChangeLog
+%doc README TODO ChangeLog
 %attr(755,root,root) %{_libdir}/xmms/*/*.so
