@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://trikuare.cx/~magenta/projects/xmms-compress-%{version}.tar.gz
+# Source0-md5:	4c2fb5fbad5207c48b948a0eb769e44b
 URL:		http://trikuare.cx/~magenta/projects/xmms-compress.html
 BuildRequires:	xmms-devel
 Requires:	xmms
