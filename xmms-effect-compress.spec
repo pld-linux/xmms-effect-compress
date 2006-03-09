@@ -30,7 +30,7 @@ kompresora z bardzo d³ugim narastaniem i opadaniem.
 
 %build
 %{__make} \
-	CC=%{__cc} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -Wall `xmms-config --cflags`"
 
 %install
