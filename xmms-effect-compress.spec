@@ -1,5 +1,5 @@
 Summary:	Volume Compression (normalizer) for XMMS
-Summary(pl.UTF-8):   Kompresja głośności (normalizacja) dla XMMS
+Summary(pl.UTF-8):	Kompresja głośności (normalizacja) dla XMMS
 Name:		xmms-effect-compress
 Version:	1.1
 Release:	3
