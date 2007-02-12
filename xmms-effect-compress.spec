@@ -1,5 +1,5 @@
 Summary:	Volume Compression (normalizer) for XMMS
-Summary(pl):	Kompresja g≥o∂no∂ci (normalizacja) dla XMMS
+Summary(pl.UTF-8):   Kompresja g≈Ço≈õno≈õci (normalizacja) dla XMMS
 Name:		xmms-effect-compress
 Version:	1.1
 Release:	3
@@ -19,11 +19,11 @@ Technically it's not really a compressor, but a volume normalizer, but
 the end result is the same as having a compressor with a very long
 attack and decay.
 
-%description -l pl
-xmms-compress jest prostym, dynamicznym kompresorem g≥o∂no∂ci dla XMMS.
-Formalnie nie jest prawdziwym kompresorem g≥o∂no∂ci, a raczej
-normalizatorem g≥o∂no∂ci, ale efekt koÒcowy jest taki sam, jak dla
-kompresora z bardzo d≥ugim narastaniem i opadaniem.
+%description -l pl.UTF-8
+xmms-compress jest prostym, dynamicznym kompresorem g≈Ço≈õno≈õci dla XMMS.
+Formalnie nie jest prawdziwym kompresorem g≈Ço≈õno≈õci, a raczej
+normalizatorem g≈Ço≈õno≈õci, ale efekt ko≈Ñcowy jest taki sam, jak dla
+kompresora z bardzo d≈Çugim narastaniem i opadaniem.
 
 %prep
 %setup -q -n xmms-compress-%{version}
